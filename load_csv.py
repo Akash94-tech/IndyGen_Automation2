@@ -12,6 +12,7 @@ import json
 import time
 from kafka import KafkaProducer
 
+
 FILE_PATH = "./data/to_process/"
 PROCESSED_PATH = "./data/processed/"
 TOPIC = "publish-log"
@@ -26,6 +27,7 @@ def publish_csv(csvf):
         }), 'utf-8')
         publish_message(message)
 
+
 def publish_json(csvf):
     dicts = csv.DictReader(csvf)
     for d in dicts:
@@ -35,12 +37,15 @@ def publish_json(csvf):
         }), 'utf-8')
         publish_message(message)
 
+
 def publish_message(message):
     producer.send(TOPIC, message)
+
 
 def move_file_to_processed(filename):
     # Move the file to processed folder
     os.rename(f"{FILE_PATH}{filename}", f"{PROCESSED_PATH}{filename}")
+
 
 def process_file(filename, is_json):
     try: 
@@ -53,6 +58,8 @@ def process_file(filename, is_json):
     except Exception as e:
         print(f"Error processing {filename}: {e}")
     
+
+
 if __name__ == "__main__":
     
     # Read sys.args

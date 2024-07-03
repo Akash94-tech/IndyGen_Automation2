@@ -1,0 +1,37 @@
+{
+    "Employees": [
+        {
+            "userId": "rirani",
+            "jobTitleName": "Dev3443eloper",
+            "firstName": "Romin",
+            "lastName": "Irani",
+            "preferredFullName": " Irani",
+            "employeeCode": "E1",
+            "region": "CA",
+            "phoneNumber": "408-34567",
+            "emailAddress": "roin.k.irani@gmail.com"
+        },
+        {
+            "userId": "nirani",
+            "jobTitleName": "Developer",
+            "firstName": "Nei",
+            "lastName": "Irani",
+            "preferredFullName": "Neil Irani",
+            "employeeCode": "E2",
+            "region": "CA",
+            "phoneNumber": "408-11334311111",
+            "emailAddress": "neilrirani@gmail.com"
+        },
+        {
+            "userId": "thanks",
+            "jobTitleName": "Program Directory",
+            "firstName": "Tom",
+            "lastName": "Hanks",
+            "preferredFullName": "Tom Hanks",
+            "employeeCode": "E3",
+            "region": "CA",
+            "phoneNumber": "408-2222343222",
+            "emailAddress": "tomha343nks@gmail.com"
+        }
+    ]
+}

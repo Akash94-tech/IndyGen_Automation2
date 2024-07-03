@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed Jul 03 10:09:04 IST 2024","Wed Jul 03 10:09:15 IST 2024","10730","Gradle suite","Gradle test","ai.indygen.tests.Test_StreamsPublishConsume","ai.indygen.tests.Test_StreamsPublishConsume","testcase03_Enrichment_ECS_DB_Test","testcase03_Enrichment_ECS_DB_Test",""
+"passed","Wed Jul 03 10:08:32 IST 2024","Wed Jul 03 10:08:43 IST 2024","11424","Gradle suite","Gradle test","ai.indygen.tests.Test_StreamsPublishConsume","ai.indygen.tests.Test_StreamsPublishConsume","testcase01_CSV_Publish_Consume_Test","testcase01_CSV_Publish_Consume_Test",""
+"passed","Wed Jul 03 10:08:48 IST 2024","Wed Jul 03 10:08:59 IST 2024","10811","Gradle suite","Gradle test","ai.indygen.tests.Test_StreamsPublishConsume","ai.indygen.tests.Test_StreamsPublishConsume","testcase02_JSON_Publish_Consume_Test","testcase02_JSON_Publish_Consume_Test",""

@@ -8,11 +8,26 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id "io.qameta.allure-report" version "2.11.2"
+    id "io.qameta.allure-adapter" version "2.11.2"
 }
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+}
+
+// Define the version of Allure you want to use via the allureVersion property
+def allureVersion = "2.24.0"
+// Define the version of AspectJ
+def aspectJVersion = "1.9.20.1"
+
+// Define configuration for AspectJ agent
+configurations {
+    agent {
+        canBeResolved = true
+        canBeConsumed = true
+    }
 }
 
 dependencies {
@@ -31,6 +46,16 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.11.0'
     implementation 'org.postgresql:postgresql:42.7.3'
     implementation 'commons-io:commons-io:2.16.1'
+
+    implementation 'io.qameta.allure:allure-testng:2.27.0'
+
+    // Import allure-bom to ensure correct versions of all the dependencies are used
+    testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
+    // Add necessary Allure dependencies to dependencies section
+    testImplementation "io.qameta.allure:allure-testng"
+
+    // Add aspectjweaver dependency
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
  
 }
 
@@ -51,4 +76,9 @@ tasks.named('test') {
     useTestNG() {
         
     }
+}
+
+// Configure javaagent for test execution
+test {
+    jvmArgs = [ "-javaagent:${configurations.agent.singleFile}" ]
 }

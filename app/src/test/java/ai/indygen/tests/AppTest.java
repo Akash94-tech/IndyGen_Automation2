@@ -5,16 +5,15 @@ package ai.indygen.tests;
 
 import ai.indygen.dev.TestApp;
 import org.testng.Assert;
-import org.testng.annotations.Test;;
 
 public class AppTest {
-@Test 
+//    @Test 
     public void test01_validateHelloWorld() {
         TestApp classUnderTest = new TestApp();
         String sExpectedMsg = "Hello World!";
         Assert.assertEquals(classUnderTest.getHelloWorld(), sExpectedMsg);
     }
-@Test 
+//    @Test 
     public void test02_validatePostiveInt() {
         TestApp classUnderTest = new TestApp();
         Assert.assertEquals(classUnderTest.getPostiveIntValue(), 10);

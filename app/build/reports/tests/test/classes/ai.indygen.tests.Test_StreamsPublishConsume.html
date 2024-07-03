@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ai.indygen.tests.Test_StreamsPublishConsume</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ai.indygen.tests.Test_StreamsPublishConsume</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ai.indygen.tests.html">ai.indygen.tests</a> &gt; Test_StreamsPublishConsume</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">48.038s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testcase03_Enrichment_ECS_DB_Test"></a>
+<h3 class="failures">testcase03_Enrichment_ECS_DB_Test</h3>
+<span class="code">
+<pre>java.lang.AssertionError: The following asserts failed:
+	Compare - DB and ECS Enrichment values for postal_code: (Result) =&gt;  expected [] but found [94124],
+	Compare - DB and ECS Enrichment values for subdivision_2_iso_code: (Result) =&gt;  expected [] but found [null],
+	Compare - DB and ECS Enrichment values for geoname_id: (Result) =&gt;  expected [6252001] but found [5391959],
+	Compare - DB and ECS Enrichment values for subdivision_2_name: (Result) =&gt;  expected [] but found [California],
+	Compare - DB and ECS Enrichment values for subdivision_1_iso_code: (Result) =&gt;  expected [] but found [CA],
+	Compare - DB and ECS Enrichment values for metro_code: (Result) =&gt;  expected [] but found [807],
+	Compare - DB and ECS Enrichment values for subdivision_1_name: (Result) =&gt;  expected [] but found [California],
+	Compare - DB and ECS Enrichment values for accuracy_radius: (Result) =&gt;  expected [1000] but found [20.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at ai.indygen.tests.Test_StreamsPublishConsume.testcase03_Enrichment_ECS_DB_Test(Test_StreamsPublishConsume.java:280)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:96)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testcase01_CSV_Publish_Consume_Test</td>
+<td class="success">16.488s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testcase02_JSON_Publish_Consume_Test</td>
+<td class="success">15.815s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testcase03_Enrichment_ECS_DB_Test</td>
+<td class="failures">15.735s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_PORT=19092
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+org.apache.kafka.common.errors.TopicExistsException: The topic has already been created
+{&quot;headers&quot;:&quot;accountname,transactionstring1,ipaddress,deviceaction,deviceinboundinterface,sourceaddress,sourceport,deviceaddress,devicehostname,resourcegroupid,resourcegroupname,devicecustomstring1,devicedirection,devicefacility,resourcename,resourcetype,destinationaddress,destinationport,transportprotocol,customnumber1,customnumber10,customnumber6,customstring55,customstring74,invalid,categorybehavior,categoryobject,categoryoutcome,categoryseverity,customstring15,customstring57,customstring6,customstring63,customstring67,customstring68,customstring69,freq,transactionstring4,eventcity,eventcountry,eventlatitude,eventlongitude,eventregion,category,policyid,policyname,riskthreatname,violator,criticality,tenantname,SiemId,eventid,formatteddate,generationtime,publishedtime,receivedtime,risktypeid,indexedat,rawevent,week,month,hour,year,dayofweek,categorizedtime,dayofyear,dayofmonth,eventtime&quot;,&quot;source&quot;:&quot;securonix_csv&quot;,&quot;value&quot;:&quot;\&quot;UNKNOWN\&quot;,\&quot;Checkpoint Next Generation Firewall Event\&quot;,\&quot;10.83.151.50\&quot;,\&quot;Accept\&quot;,\&quot;eth4\&quot;,\&quot;10.83.151.50\&quot;,\&quot;59831\&quot;,\&quot;10.83.152.35\&quot;,\&quot;chkmgmt-hisysmc\&quot;,\&quot;4\&quot;,\&quot;HSI_Checkpont_firewall\&quot;,\&quot;Standard\&quot;,\&quot;inbound\&quot;,\&quot;VPN-1 &amp; FireWall-1\&quot;,\&quot;HSI_Checkpont_firewall\&quot;,\&quot;Check Point Next Generation Firewall\&quot;,\&quot;35.186.224.25\&quot;,\&quot;443\&quot;,\&quot;TCP\&quot;,\&quot;22\&quot;,\&quot;65536\&quot;,\&quot;6\&quot;,\&quot;geo_protection\&quot;,\&quot;HISYSMC-FW1\&quot;,\&quot;false\&quot;,\&quot;Connection Request\&quot;,\&quot;Network\&quot;,\&quot;Success\&quot;,\&quot;0\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;\&quot;,\&quot;Command And Control\&quot;,\&quot;1812\&quot;,\&quot;Traffic to known Malicious IP Address - TPI - NGFW-NGF\&quot;,\&quot;Application Layer Protocol\&quot;,\&quot;Activityip\&quot;,\&quot;Low\&quot;,\&quot;Hitachi Systems India Pvt Ltd\&quot;,\&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}\&quot;,\&quot;95a94846-2b46-4028-b43d-5406d2914f18\&quot;,\&quot;\&quot;,\&quot;2024-03-03 21:30:01\&quot;,\&quot;2024-03-03 21:18:00\&quot;,\&quot;2024-03-03 21:18:02\&quot;,\&quot;3691\&quot;,\&quot;2024-03-03 21:33:03\&quot;,\&quot;Mar  3 21:17:13 10.83.152.8 1 2024-03-03T15:46:38Z chkmgmt-hisysmc CheckPoint 52042 - [action:\&quot;\&quot;Accept\&quot;\&quot;; flags:\&quot;\&quot;393216\&quot;\&quot;; ifdir:\&quot;\&quot;inbound\&quot;\&quot;; ifname:\&quot;\&quot;eth4\&quot;\&quot;; logid:\&quot;\&quot;65536\&quot;\&quot;; loguid:\&quot;\&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}\&quot;\&quot;; origin:\&quot;\&quot;10.83.152.35\&quot;\&quot;; originsicname:\&quot;\&quot;CN=HISYSMC-FW1,O=chkmgmt-hisysmc.microclinic.in.ynni43\&quot;\&quot;; sequencenum:\&quot;\&quot;22\&quot;\&quot;; time:\&quot;\&quot;1709480798\&quot;\&quot;; version:\&quot;\&quot;5\&quot;\&quot;; __policy_id_tag:\&quot;\&quot;product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\]\&quot;\&quot;; dst:\&quot;\&quot;35.186.224.25\&quot;\&quot;; dst_country:\&quot;\&quot;USA\&quot;\&quot;; inspection_information:\&quot;\&quot;Geo-location outbound enforcement\&quot;\&quot;; inspection_profile:\&quot;\&quot;Geo_settings_upgraded_from_Recommended_Protection\&quot;\&quot;; product:\&quot;\&quot;VPN-1 &amp; FireWall-1\&quot;\&quot;; protection_type:\&quot;\&quot;geo_protection\&quot;\&quot;; proto:\&quot;\&quot;6\&quot;\&quot;; s_port:\&quot;\&quot;59831\&quot;\&quot;; service:\&quot;\&quot;443\&quot;\&quot;; src:\&quot;\&quot;10.83.151.50\&quot;\&quot;; src_country:\&quot;\&quot;Internal\&quot;\&quot;]\&quot;,\&quot;10\&quot;,\&quot;3\&quot;,\&quot;21\&quot;,\&quot;2024\&quot;,\&quot;1\&quot;,\&quot;Afternoon\&quot;,\&quot;63\&quot;,\&quot;3\&quot;,\&quot;2024-03-03 21:16:38\&quot;&quot;}
+
+End - Publishing record .... Topic Name:publish-log
+
+
+Mapped JSON Output ---&gt; Start
+
+{&quot;threat.type&quot;:&quot;3691&quot;,&quot;event.severity&quot;:&quot;0&quot;,&quot;host.name&quot;:&quot;chkmgmt-hisysmc&quot;,&quot;event.outcome&quot;:&quot;Success&quot;,&quot;event.start.hour&quot;:&quot;21&quot;,&quot;event.start.day_of_month&quot;:&quot;3&quot;,&quot;rule.name&quot;:&quot;Traffic to known Malicious IP Address - TPI - NGFW-NGF&quot;,&quot;event.category&quot;:&quot;Command And Control&quot;,&quot;event.ingested&quot;:&quot;2024-03-03 21:33:03&quot;,&quot;event.start.day_of_week&quot;:&quot;1&quot;,&quot;event.start.week&quot;:&quot;10&quot;,&quot;network.direction&quot;:&quot;inbound&quot;,&quot;event.received&quot;:&quot;2024-03-03 21:18:02&quot;,&quot;event.start.day_of_year&quot;:&quot;63&quot;,&quot;event.original&quot;:&quot;Mar  3 21:17:13 10.83.152.8 1 2024-03-03T15:46:38Z chkmgmt-hisysmc CheckPoint 52042 - [action:\&quot;\&quot;Accept\&quot;\&quot;; flags:\&quot;\&quot;393216\&quot;\&quot;; ifdir:\&quot;\&quot;inbound\&quot;\&quot;; ifname:\&quot;\&quot;eth4\&quot;\&quot;; logid:\&quot;\&quot;65536\&quot;\&quot;; loguid:\&quot;\&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}\&quot;\&quot;; origin:\&quot;\&quot;10.83.152.35\&quot;\&quot;; originsicname:\&quot;\&quot;CN=HISYSMC-FW1,O=chkmgmt-hisysmc.microclinic.in.ynni43\&quot;\&quot;; sequencenum:\&quot;\&quot;22\&quot;\&quot;; time:\&quot;\&quot;1709480798\&quot;\&quot;; version:\&quot;\&quot;5\&quot;\&quot;; __policy_id_tag:\&quot;\&quot;product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\]\&quot;\&quot;; dst:\&quot;\&quot;35.186.224.25\&quot;\&quot;; dst_country:\&quot;\&quot;USA\&quot;\&quot;; inspection_information:\&quot;\&quot;Geo-location outbound enforcement\&quot;\&quot;; inspection_profile:\&quot;\&quot;Geo_settings_upgraded_from_Recommended_Protection\&quot;\&quot;; product:\&quot;\&quot;VPN-1 &amp; FireWall-1\&quot;\&quot;; protection_type:\&quot;\&quot;geo_protection\&quot;\&quot;; proto:\&quot;\&quot;6\&quot;\&quot;; s_port:\&quot;\&quot;59831\&quot;\&quot;; service:\&quot;\&quot;443\&quot;\&quot;; src:\&quot;\&quot;10.83.151.50\&quot;\&quot;; src_country:\&quot;\&quot;Internal\&quot;\&quot;]&quot;,&quot;server.address&quot;:&quot;35.186.224.25&quot;,&quot;network.transport&quot;:&quot;TCP&quot;,&quot;host.ip&quot;:&quot;10.83.152.35&quot;,&quot;geo.city_name&quot;:&quot;&quot;,&quot;event.start&quot;:&quot;2024-03-03 21:16:38&quot;,&quot;event.start.year&quot;:&quot;2024&quot;,&quot;user.name&quot;:&quot;UNKNOWN&quot;,&quot;server.port&quot;:&quot;443&quot;,&quot;cloud.account.name&quot;:&quot;Hitachi Systems India Pvt Ltd&quot;,&quot;event.action&quot;:&quot;Accept&quot;,&quot;cloud.resource.name&quot;:&quot;HSI_Checkpont_firewall&quot;,&quot;source.port&quot;:&quot;59831&quot;,&quot;cloud.resource.id&quot;:&quot;4&quot;,&quot;source.ip&quot;:&quot;10.83.151.50&quot;,&quot;geo.location.lat&quot;:&quot;&quot;,&quot;label.siem_id&quot;:&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}&quot;,&quot;event.created&quot;:&quot;2024-03-03 21:30:01&quot;,&quot;threat.name&quot;:&quot;Application Layer Protocol&quot;,&quot;network.iana_number&quot;:&quot;eth4&quot;,&quot;event.start.month&quot;:&quot;3&quot;,&quot;cloud.resource.type&quot;:&quot;Check Point Next Generation Firewall&quot;,&quot;geo.location.lon&quot;:&quot;&quot;,&quot;rule.id&quot;:&quot;1812&quot;,&quot;geo.region_name&quot;:&quot;&quot;,&quot;geo.country_name&quot;:&quot;&quot;,&quot;event.id&quot;:&quot;95a94846-2b46-4028-b43d-5406d2914f18&quot;}
+
+Mapped JSON Output ---&gt; End
+
+
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_PORT=19092
+
+
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+
+Published message to Topic: publish-log, Partition: 0, Offset: 10
+
+
+
+Comsumed record: #1
+Consumed record: 
+{&quot;event.ingested&quot;:&quot;2024-03-03 21:33:03&quot;,&quot;event.category&quot;:&quot;Command And Control&quot;,&quot;rule.name&quot;:&quot;Traffic to known Malicious IP Address - TPI - NGFW-NGF&quot;,&quot;event.start.day_of_month&quot;:&quot;3&quot;,&quot;event.start.hour&quot;:&quot;21&quot;,&quot;event.outcome&quot;:&quot;Success&quot;,&quot;host.name&quot;:&quot;chkmgmt-hisysmc&quot;,&quot;event.severity&quot;:&quot;0&quot;,&quot;threat.type&quot;:&quot;3691&quot;,&quot;event.id&quot;:&quot;95a94846-2b46-4028-b43d-5406d2914f18&quot;,&quot;geo.country_name&quot;:&quot;&quot;,&quot;geo.region_name&quot;:&quot;&quot;,&quot;rule.id&quot;:&quot;1812&quot;,&quot;geo.location.lon&quot;:&quot;&quot;,&quot;cloud.resource.type&quot;:&quot;Check Point Next Generation Firewall&quot;,&quot;event.start.month&quot;:&quot;3&quot;,&quot;network.iana_number&quot;:&quot;eth4&quot;,&quot;threat.name&quot;:&quot;Application Layer Protocol&quot;,&quot;event.created&quot;:&quot;2024-03-03 21:30:01&quot;,&quot;label.siem_id&quot;:&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}&quot;,&quot;geo.location.lat&quot;:&quot;&quot;,&quot;source.ip&quot;:&quot;10.83.151.50&quot;,&quot;cloud.resource.id&quot;:&quot;4&quot;,&quot;source.port&quot;:&quot;59831&quot;,&quot;cloud.resource.name&quot;:&quot;HSI_Checkpont_firewall&quot;,&quot;event.action&quot;:&quot;Accept&quot;,&quot;cloud.account.name&quot;:&quot;Hitachi Systems India Pvt Ltd&quot;,&quot;server.port&quot;:&quot;443&quot;,&quot;user.name&quot;:&quot;UNKNOWN&quot;,&quot;event.start.year&quot;:&quot;2024&quot;,&quot;event.start&quot;:&quot;2024-03-03 21:16:38&quot;,&quot;geo.city_name&quot;:&quot;&quot;,&quot;host.ip&quot;:&quot;10.83.152.35&quot;,&quot;network.transport&quot;:&quot;TCP&quot;,&quot;server.address&quot;:&quot;35.186.224.25&quot;,&quot;event.original&quot;:&quot;Mar  3 21:17:13 10.83.152.8 1 2024-03-03T15:46:38Z chkmgmt-hisysmc CheckPoint 52042 - [action:\&quot;\&quot;Accept\&quot;\&quot;; flags:\&quot;\&quot;393216\&quot;\&quot;; ifdir:\&quot;\&quot;inbound\&quot;\&quot;; ifname:\&quot;\&quot;eth4\&quot;\&quot;; logid:\&quot;\&quot;65536\&quot;\&quot;; loguid:\&quot;\&quot;{0x65e49bbd,0x18,0x898530a,0x3fffcb4a}\&quot;\&quot;; origin:\&quot;\&quot;10.83.152.35\&quot;\&quot;; originsicname:\&quot;\&quot;CN=HISYSMC-FW1,O=chkmgmt-hisysmc.microclinic.in.ynni43\&quot;\&quot;; sequencenum:\&quot;\&quot;22\&quot;\&quot;; time:\&quot;\&quot;1709480798\&quot;\&quot;; version:\&quot;\&quot;5\&quot;\&quot;; __policy_id_tag:\&quot;\&quot;product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\]\&quot;\&quot;; dst:\&quot;\&quot;35.186.224.25\&quot;\&quot;; dst_country:\&quot;\&quot;USA\&quot;\&quot;; inspection_information:\&quot;\&quot;Geo-location outbound enforcement\&quot;\&quot;; inspection_profile:\&quot;\&quot;Geo_settings_upgraded_from_Recommended_Protection\&quot;\&quot;; product:\&quot;\&quot;VPN-1 &amp; FireWall-1\&quot;\&quot;; protection_type:\&quot;\&quot;geo_protection\&quot;\&quot;; proto:\&quot;\&quot;6\&quot;\&quot;; s_port:\&quot;\&quot;59831\&quot;\&quot;; service:\&quot;\&quot;443\&quot;\&quot;; src:\&quot;\&quot;10.83.151.50\&quot;\&quot;; src_country:\&quot;\&quot;Internal\&quot;\&quot;]&quot;,&quot;event.start.day_of_year&quot;:&quot;63&quot;,&quot;event.received&quot;:&quot;2024-03-03 21:18:02&quot;,&quot;network.direction&quot;:&quot;inbound&quot;,&quot;event.start.week&quot;:&quot;10&quot;,&quot;event.start.day_of_week&quot;:&quot;1&quot;}
+
+
+No more records
+
+====================== TEST RESULT ================================
+************** PASSS *********
+
+
+
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_PORT=19092
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+org.apache.kafka.common.errors.TopicExistsException: The topic has already been created
+{&quot;source&quot;:&quot;securonix&quot;,&quot;value&quot;:{
+    &quot;accountname&quot;: &quot;UNKNOWN&quot;,
+    &quot;transactionstring1&quot;: &quot;Checkpoint Next Generation Firewall Event&quot;,
+    &quot;ipaddress&quot;: &quot;162.243.147.25&quot;,
+    &quot;deviceaction&quot;: &quot;Accept&quot;,
+    &quot;deviceinboundinterface&quot;: &quot;eth5&quot;,
+    &quot;sourceaddress&quot;: &quot;162.243.147.25&quot;,
+    &quot;sourceport&quot;: &quot;54903&quot;,
+    &quot;deviceaddress&quot;: &quot;10.83.152.36&quot;,
+    &quot;devicehostname&quot;: &quot;chkmgmt-hisysmc&quot;,
+    &quot;resourcegroupid&quot;: &quot;4&quot;,
+    &quot;resourcegroupname&quot;: &quot;HSI_Checkpont_firewall&quot;,
+    &quot;devicecustomstring1&quot;: &quot;Standard&quot;,
+    &quot;devicedirection&quot;: &quot;inbound&quot;,
+    &quot;devicefacility&quot;: &quot;VPN-1 &amp; FireWall-1&quot;,
+    &quot;resourcename&quot;: &quot;HSI_Checkpont_firewall&quot;,
+    &quot;resourcetype&quot;: &quot;Check Point Next Generation Firewall&quot;,
+    &quot;destinationaddress&quot;: &quot;122.186.40.52&quot;,
+    &quot;destinationport&quot;: &quot;465&quot;,
+    &quot;transportprotocol&quot;: &quot;TCP&quot;,
+    &quot;customnumber1&quot;: &quot;2&quot;,
+    &quot;customnumber10&quot;: &quot;65536&quot;,
+    &quot;customnumber6&quot;: &quot;6&quot;,
+    &quot;customstring55&quot;: &quot;geo_protection&quot;,
+    &quot;customstring74&quot;: &quot;HISYSMC-FW2&quot;,
+    &quot;invalid&quot;: &quot;false&quot;,
+    &quot;categorybehavior&quot;: &quot;Connection Request&quot;,
+    &quot;categoryobject&quot;: &quot;Network&quot;,
+    &quot;categoryoutcome&quot;: &quot;Success&quot;,
+    &quot;categoryseverity&quot;: &quot;0&quot;,
+    &quot;customstring15&quot;: &quot;&quot;,
+    &quot;customstring57&quot;: &quot;&quot;,
+    &quot;customstring6&quot;: &quot;&quot;,
+    &quot;customstring63&quot;: &quot;&quot;,
+    &quot;customstring67&quot;: &quot;&quot;,
+    &quot;customstring68&quot;: &quot;&quot;,
+    &quot;customstring69&quot;: &quot;&quot;,
+    &quot;freq&quot;: &quot;&quot;,
+    &quot;transactionstring4&quot;: &quot;&quot;,
+    &quot;eventcity&quot;: &quot;San Francisco&quot;,
+    &quot;eventcountry&quot;: &quot;United States&quot;,
+    &quot;eventlatitude&quot;: &quot;37.7308&quot;,
+    &quot;eventlongitude&quot;: &quot;-122.3838&quot;,
+    &quot;eventregion&quot;: &quot;North America&quot;,
+    &quot;category&quot;: &quot;ALERT&quot;,
+    &quot;policyid&quot;: &quot;1755&quot;,
+    &quot;policyname&quot;: &quot;Hitachi Malicious IP detection_HSI&quot;,
+    &quot;riskthreatname&quot;: &quot;Activity from malicious address&quot;,
+    &quot;violator&quot;: &quot;Activityip&quot;,
+    &quot;criticality&quot;: &quot;Medium&quot;,
+    &quot;tenantname&quot;: &quot;Hitachi Systems India Pvt Ltd&quot;,
+    &quot;SiemId&quot;: &quot;{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}&quot;,
+    &quot;eventid&quot;: &quot;15860fe9-1735-4d55-82c7-29bd2f59b493&quot;,
+    &quot;formatteddate&quot;: &quot;&quot;,
+    &quot;generationtime&quot;: &quot;2024-03-04 00:04:31&quot;,
+    &quot;publishedtime&quot;: &quot;2024-03-04 00:01:00&quot;,
+    &quot;receivedtime&quot;: &quot;2024-03-04 00:01:02&quot;,
+    &quot;risktypeid&quot;: &quot;3588&quot;,
+    &quot;indexedat&quot;: &quot;2024-03-04 00:06:01&quot;,
+    &quot;rawevent&quot;: &quot;Mar  4 00:00:23 10.83.152.8 1 2024-03-03T18:29:35Z chkmgmt-hisysmc CheckPoint 52042 - [action:Accept; flags:393216; ifdir:inbound; ifname:eth5; logid:65536; loguid:{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}; origin:10.83.152.36; originsicname:CN=HISYSMC-FW2,O=chkmgmt-hisysmc.microclinic.in.ynni43; sequencenum:2; time:1709490575; version:5; __policy_id_tag:product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\\\]; dst:122.186.40.52; dst_country:IND; inspection_information:Geo-location inbound enforcement; inspection_profile:Geo_settings_upgraded_from_Recommended_Protection; product:VPN-1 &amp; FireWall-1; protection_type:geo_protection; proto:6; s_port:54903; service:465; src:162.243.147.25; src_country:USA]&quot;,
+    &quot;week&quot;: &quot;10&quot;,
+    &quot;month&quot;: &quot;3&quot;,
+    &quot;hour&quot;: &quot;23&quot;,
+    &quot;year&quot;: &quot;2024&quot;,
+    &quot;dayofweek&quot;: &quot;1&quot;,
+    &quot;categorizedtime&quot;: &quot;Evening&quot;,
+    &quot;dayofyear&quot;: &quot;63&quot;,
+    &quot;dayofmonth&quot;: &quot;3&quot;,
+    &quot;eventtime&quot;: &quot;2024-03-03 23:59:35&quot;
+}}
+
+Start - Publishing JSON record .... Topic Name:publish-log
+
+
+End - Publishing JSON record .... Topic Name:publish-log
+
+
+Mapped JSON Output ---&gt; Start
+
+{&quot;threat.type&quot;:&quot;3588&quot;,&quot;event.severity&quot;:&quot;0&quot;,&quot;host.name&quot;:&quot;chkmgmt-hisysmc&quot;,&quot;event.outcome&quot;:&quot;Success&quot;,&quot;event.start.hour&quot;:&quot;23&quot;,&quot;event.start.day_of_month&quot;:&quot;3&quot;,&quot;rule.name&quot;:&quot;Hitachi Malicious IP detection_HSI&quot;,&quot;event.category&quot;:&quot;ALERT&quot;,&quot;event.ingested&quot;:&quot;2024-03-04 00:06:01&quot;,&quot;event.start.day_of_week&quot;:&quot;1&quot;,&quot;event.start.week&quot;:&quot;10&quot;,&quot;network.direction&quot;:&quot;inbound&quot;,&quot;event.received&quot;:&quot;2024-03-04 00:01:02&quot;,&quot;event.start.day_of_year&quot;:&quot;63&quot;,&quot;event.original&quot;:&quot;Mar  4 00:00:23 10.83.152.8 1 2024-03-03T18:29:35Z chkmgmt-hisysmc CheckPoint 52042 - [action:Accept; flags:393216; ifdir:inbound; ifname:eth5; logid:65536; loguid:{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}; origin:10.83.152.36; originsicname:CN=HISYSMC-FW2,O=chkmgmt-hisysmc.microclinic.in.ynni43; sequencenum:2; time:1709490575; version:5; __policy_id_tag:product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\\\]; dst:122.186.40.52; dst_country:IND; inspection_information:Geo-location inbound enforcement; inspection_profile:Geo_settings_upgraded_from_Recommended_Protection; product:VPN-1 &amp; FireWall-1; protection_type:geo_protection; proto:6; s_port:54903; service:465; src:162.243.147.25; src_country:USA]&quot;,&quot;server.address&quot;:&quot;122.186.40.52&quot;,&quot;network.transport&quot;:&quot;TCP&quot;,&quot;host.ip&quot;:&quot;10.83.152.36&quot;,&quot;geo.city_name&quot;:&quot;San Francisco&quot;,&quot;event.start&quot;:&quot;2024-03-03 23:59:35&quot;,&quot;event.start.year&quot;:&quot;2024&quot;,&quot;user.name&quot;:&quot;UNKNOWN&quot;,&quot;server.port&quot;:&quot;465&quot;,&quot;cloud.account.name&quot;:&quot;Hitachi Systems India Pvt Ltd&quot;,&quot;event.action&quot;:&quot;Accept&quot;,&quot;cloud.resource.name&quot;:&quot;HSI_Checkpont_firewall&quot;,&quot;source.port&quot;:&quot;54903&quot;,&quot;cloud.resource.id&quot;:&quot;4&quot;,&quot;source.ip&quot;:&quot;162.243.147.25&quot;,&quot;geo.location.lat&quot;:&quot;37.7308&quot;,&quot;label.siem_id&quot;:&quot;{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}&quot;,&quot;event.created&quot;:&quot;2024-03-04 00:04:31&quot;,&quot;threat.name&quot;:&quot;Activity from malicious address&quot;,&quot;network.iana_number&quot;:&quot;eth5&quot;,&quot;event.start.month&quot;:&quot;3&quot;,&quot;cloud.resource.type&quot;:&quot;Check Point Next Generation Firewall&quot;,&quot;geo.location.lon&quot;:&quot;-122.3838&quot;,&quot;rule.id&quot;:&quot;1755&quot;,&quot;geo.region_name&quot;:&quot;North America&quot;,&quot;geo.country_name&quot;:&quot;United States&quot;,&quot;event.id&quot;:&quot;15860fe9-1735-4d55-82c7-29bd2f59b493&quot;}
+
+Mapped JSON Output ---&gt; End
+
+
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_PORT=19092
+
+
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+
+Published message to Topic: publish-log, Partition: 0, Offset: 11
+
+
+
+Comsumed record: #1
+Consumed record: 
+{&quot;event.ingested&quot;:&quot;2024-03-04 00:06:01&quot;,&quot;event.category&quot;:&quot;ALERT&quot;,&quot;rule.name&quot;:&quot;Hitachi Malicious IP detection_HSI&quot;,&quot;event.start.day_of_month&quot;:&quot;3&quot;,&quot;event.start.hour&quot;:&quot;23&quot;,&quot;event.outcome&quot;:&quot;Success&quot;,&quot;host.name&quot;:&quot;chkmgmt-hisysmc&quot;,&quot;event.severity&quot;:&quot;0&quot;,&quot;threat.type&quot;:&quot;3588&quot;,&quot;event.id&quot;:&quot;15860fe9-1735-4d55-82c7-29bd2f59b493&quot;,&quot;geo.country_name&quot;:&quot;United States&quot;,&quot;geo.region_name&quot;:&quot;North America&quot;,&quot;rule.id&quot;:&quot;1755&quot;,&quot;geo.location.lon&quot;:&quot;-122.3838&quot;,&quot;cloud.resource.type&quot;:&quot;Check Point Next Generation Firewall&quot;,&quot;event.start.month&quot;:&quot;3&quot;,&quot;network.iana_number&quot;:&quot;eth5&quot;,&quot;threat.name&quot;:&quot;Activity from malicious address&quot;,&quot;event.created&quot;:&quot;2024-03-04 00:04:31&quot;,&quot;label.siem_id&quot;:&quot;{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}&quot;,&quot;geo.location.lat&quot;:&quot;37.7308&quot;,&quot;source.ip&quot;:&quot;162.243.147.25&quot;,&quot;cloud.resource.id&quot;:&quot;4&quot;,&quot;source.port&quot;:&quot;54903&quot;,&quot;cloud.resource.name&quot;:&quot;HSI_Checkpont_firewall&quot;,&quot;event.action&quot;:&quot;Accept&quot;,&quot;cloud.account.name&quot;:&quot;Hitachi Systems India Pvt Ltd&quot;,&quot;server.port&quot;:&quot;465&quot;,&quot;user.name&quot;:&quot;UNKNOWN&quot;,&quot;event.start.year&quot;:&quot;2024&quot;,&quot;event.start&quot;:&quot;2024-03-03 23:59:35&quot;,&quot;geo.city_name&quot;:&quot;San Francisco&quot;,&quot;host.ip&quot;:&quot;10.83.152.36&quot;,&quot;network.transport&quot;:&quot;TCP&quot;,&quot;server.address&quot;:&quot;122.186.40.52&quot;,&quot;event.original&quot;:&quot;Mar  4 00:00:23 10.83.152.8 1 2024-03-03T18:29:35Z chkmgmt-hisysmc CheckPoint 52042 - [action:Accept; flags:393216; ifdir:inbound; ifname:eth5; logid:65536; loguid:{0x65e4c1fc,0x4,0x898530a,0x3fffcb4a}; origin:10.83.152.36; originsicname:CN=HISYSMC-FW2,O=chkmgmt-hisysmc.microclinic.in.ynni43; sequencenum:2; time:1709490575; version:5; __policy_id_tag:product=VPN-1 &amp; FireWall-1[db_tag={1E53ABA2-E497-2049-8566-3F2EB71B4FD5};mgmt=chkmgmt-hisysmc;date=1709376413;policy_name=Standard\\\\]; dst:122.186.40.52; dst_country:IND; inspection_information:Geo-location inbound enforcement; inspection_profile:Geo_settings_upgraded_from_Recommended_Protection; product:VPN-1 &amp; FireWall-1; protection_type:geo_protection; proto:6; s_port:54903; service:465; src:162.243.147.25; src_country:USA]&quot;,&quot;event.start.day_of_year&quot;:&quot;63&quot;,&quot;event.received&quot;:&quot;2024-03-04 00:01:02&quot;,&quot;network.direction&quot;:&quot;inbound&quot;,&quot;event.start.week&quot;:&quot;10&quot;,&quot;event.start.day_of_week&quot;:&quot;1&quot;}
+
+
+No more records
+
+====================== TEST RESULT ================================
+************** PASSS *********
+
+
+
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_PORT=19092
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; producerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+org.apache.kafka.common.errors.TopicExistsException: The topic has already been created
+
+Start - Publishing JSON record .... Topic Name:enriched-log-ecs
+
+
+End - Publishing JSON record .... Topic Name:enriched-log-ecs
+
+
+----------------------------------------------------------------
+Environment Variable :  BOOTSTRAP_SERVERS=null
+Environment Variable :  BOOTSTRAP_PORT=null
+----------------------------------------------------------------
+System Property :  BOOTSTRAP_SERVERS=null
+System Property :  BOOTSTRAP_PORT=null
+
+----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS=localhost
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_PORT=19092
+
+
+StreamConfig &lt;&gt; consumerConfig | sBOOTSTRAP_SERVERS_CONFIG=localhost:19092
+
+----------------------------------------------------------------
+
+Published message to Topic: enriched-log-ecs, Partition: 0, Offset: 5
+
+
+
+Comsumed record: #1
+Consumed record: 
+{
+    &quot;cloud.account.name&quot;:&quot;Hitachi Systems India Pvt Ltd&quot;,
+    &quot;cloud.resource.id&quot;:&quot;4&quot;,
+    &quot;cloud.resource.name&quot;:&quot;HSI_Checkpont_firewall&quot;,
+    &quot;cloud.resource.type&quot;:&quot;Check Point Next Generation Firewall&quot;,
+    &quot;event.action&quot;:&quot;Drop&quot;,
+    &quot;event.category&quot;:&quot;ALERT&quot;,
+    &quot;event.created&quot;:&quot;2024-03-21 00:30:27&quot;,
+    &quot;event.id&quot;:&quot;f6fb6b30-5b85-4e7c-88aa-9e02a6fc73e9&quot;,
+    &quot;event.ingested&quot;:&quot;2024-03-21 00:33:03&quot;,
+    &quot;event.original&quot;:&quot;Mar 21 00:25:48 10.83.152.8 1 2024-03-20T18:54:49Z chkmgmt-hisysmc CheckPoint 13282&quot;,
+    &quot;event.outcome&quot;:&quot;Success&quot;,
+    &quot;event.received&quot;:&quot;2024-03-21 00:26:00&quot;,
+    &quot;event.severity&quot;:&quot;Medium&quot;,
+    &quot;event.start&quot;:null,
+    &quot;event.start.day_of_month&quot;:&quot;21&quot;,
+    &quot;event.start.day_of_week&quot;:&quot;5&quot;,
+    &quot;event.start.day_of_year&quot;:&quot;81&quot;,
+    &quot;event.start.hour&quot;:&quot;0&quot;,
+    &quot;event.start.month&quot;:&quot;3&quot;,
+    &quot;event.start.week&quot;:&quot;12&quot;,
+    &quot;event.start.year&quot;:&quot;2024&quot;,
+    &quot;geo.city_name&quot;:null,
+    &quot;geo.continent_code&quot;:&quot;NA&quot;,
+    &quot;geo.country_iso_code&quot;:&quot;US&quot;,
+    &quot;geo.country_name&quot;:&quot;United States&quot;,
+    &quot;geo.is_in_european_union&quot;:true,
+    &quot;geo.is_satellite_provider&quot;:true,
+    &quot;geo.location.accuracy_radius&quot;:1000,
+    &quot;geo.location.lat&quot;:&quot;32.7967&quot;,
+    &quot;geo.location.lon&quot;:&quot;-117.1367&quot;,
+    &quot;geo.metro_code&quot;:&quot;&quot;,
+    &quot;geo.name_id&quot;:&quot;6252001&quot;,
+    &quot;geo.postal_code&quot;:&quot;&quot;,
+    &quot;geo.region_name&quot;:&quot;North America&quot;,
+    &quot;geo.subdivision_1_iso_code&quot;:&quot;&quot;,
+    &quot;geo.subdivision_1_name&quot;:&quot;&quot;,
+    &quot;geo.subdivision_2_iso_code&quot;:&quot;&quot;,
+    &quot;geo.subdivision_2_name&quot;:&quot;&quot;,
+    &quot;geo.timezone&quot;:&quot;America/Chicago&quot;,
+    &quot;host.ip&quot;:&quot;10.83.152.35&quot;,
+    &quot;host.name&quot;:&quot;chkmgmt-hisysmc&quot;,
+    &quot;label.siem_id&quot;:&quot;{0x65fb3174,0x0,0x898530a,0x1a0233e2}&quot;,
+    &quot;network.direction&quot;:&quot;inbound&quot;,
+    &quot;network.iana_number&quot;:&quot;eth2&quot;,
+    &quot;network.transport&quot;:&quot;TCP&quot;,
+    &quot;rule.id&quot;:&quot;1755&quot;,
+    &quot;rule.name&quot;:&quot;Hitachi Malicious IP detection_HSI&quot;,
+    &quot;server.address&quot;:&quot;220.227.107.93&quot;,
+    &quot;server.port&quot;:&quot;7001&quot;,
+    &quot;source.ip&quot;:&quot;71.6.232.26&quot;,
+    &quot;source.port&quot;:&quot;48614&quot;,
+    &quot;threat.indicator.sightings&quot;:true,
+    &quot;threat.name&quot;:&quot;Activity from malicious address&quot;,
+    &quot;threat.type&quot;:&quot;3588&quot;,
+    &quot;user.locale_code&quot;:&quot;en&quot;,
+    &quot;user.name&quot;:&quot;UNKNOWN&quot;,
+    &quot;user.name.registered_country_geoname_id&quot;:&quot;6252001&quot;,
+    &quot;user.name.represented_country_geoname_id&quot;:0
+    }
+
+
+No more records
+
+sTestIPStr (host.ip) = 10.83.152.35
+
+
+{subdivision_2_name=California, registered_country_geoname_id=6252001, represented_country_geoname_id=0, continent_code=NA, subdivision_1_iso_code=CA, accuracy_radius=20.0, time_zone=America/Los_Angeles, geoname_id=5391959, is_anonymous_proxy=true, subdivision_2_iso_code=null, locale_code=en, country_iso_code=US, metro_code=807, is_in_european_union=true, is_satellite_provider=true, postal_code=94124, subdivision_1_name=California}
+
+{cloud.account.name=Hitachi Systems India Pvt Ltd, cloud.resource.id=4, cloud.resource.name=HSI_Checkpont_firewall, cloud.resource.type=Check Point Next Generation Firewall, event.action=Drop, event.category=ALERT, event.created=2024-03-21 00:30:27, event.id=f6fb6b30-5b85-4e7c-88aa-9e02a6fc73e9, event.ingested=2024-03-21 00:33:03, event.original=Mar 21 00:25:48 10.83.152.8 1 2024-03-20T18:54:49Z chkmgmt-hisysmc CheckPoint 13282, event.outcome=Success, event.received=2024-03-21 00:26:00, event.severity=Medium, event.start=null, event.start.day_of_month=21, event.start.day_of_week=5, event.start.day_of_year=81, event.start.hour=0, event.start.month=3, event.start.week=12, event.start.year=2024, geo.city_name=null, geo.continent_code=NA, geo.country_iso_code=US, geo.country_name=United States, geo.is_in_european_union=true, geo.is_satellite_provider=true, geo.location.accuracy_radius=1000, geo.location.lat=32.7967, geo.location.lon=-117.1367, geo.metro_code=, geo.name_id=6252001, geo.postal_code=, geo.region_name=North America, geo.subdivision_1_iso_code=, geo.subdivision_1_name=, geo.subdivision_2_iso_code=, geo.subdivision_2_name=, geo.timezone=America/Chicago, host.ip=10.83.152.35, host.name=chkmgmt-hisysmc, label.siem_id={0x65fb3174,0x0,0x898530a,0x1a0233e2}, network.direction=inbound, network.iana_number=eth2, network.transport=TCP, rule.id=1755, rule.name=Hitachi Malicious IP detection_HSI, server.address=220.227.107.93, server.port=7001, source.ip=71.6.232.26, source.port=48614, threat.indicator.sightings=true, threat.name=Activity from malicious address, threat.type=3588, user.locale_code=en, user.name=UNKNOWN, user.name.registered_country_geoname_id=6252001, user.name.represented_country_geoname_id=0}
+
+
+Verifying: DB vs ECS Enrichment for Keys (represented_country_geoname_id, user.name.represented_country_geoname_id)
+dbIPEnrichmentMap =&gt;(represented_country_geoname_id,0)
+fileJsonIPEnrichmentMap =&gt;(user.name.represented_country_geoname_id,0)
+
+
+Verifying: DB vs ECS Enrichment for Keys (continent_code, geo.continent_code)
+dbIPEnrichmentMap =&gt;(continent_code,NA)
+fileJsonIPEnrichmentMap =&gt;(geo.continent_code,NA)
+
+
+Verifying: DB vs ECS Enrichment for Keys (is_in_european_union, geo.is_in_european_union)
+dbIPEnrichmentMap =&gt;(is_in_european_union,true)
+fileJsonIPEnrichmentMap =&gt;(geo.is_in_european_union,true)
+
+
+Verifying: DB vs ECS Enrichment for Keys (postal_code, geo.postal_code)
+dbIPEnrichmentMap =&gt;(postal_code,94124)
+fileJsonIPEnrichmentMap =&gt;(geo.postal_code,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (registered_country_geoname_id, user.name.registered_country_geoname_id)
+dbIPEnrichmentMap =&gt;(registered_country_geoname_id,6252001)
+fileJsonIPEnrichmentMap =&gt;(user.name.registered_country_geoname_id,6252001)
+
+
+Verifying: DB vs ECS Enrichment for Keys (subdivision_2_iso_code, geo.subdivision_2_iso_code)
+dbIPEnrichmentMap =&gt;(subdivision_2_iso_code,null)
+fileJsonIPEnrichmentMap =&gt;(geo.subdivision_2_iso_code,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (locale_code, user.locale_code)
+dbIPEnrichmentMap =&gt;(locale_code,en)
+fileJsonIPEnrichmentMap =&gt;(user.locale_code,en)
+
+
+Verifying: DB vs ECS Enrichment for Keys (geoname_id, user.name.registered_country_geoname_id)
+dbIPEnrichmentMap =&gt;(geoname_id,5391959)
+fileJsonIPEnrichmentMap =&gt;(user.name.registered_country_geoname_id,6252001)
+
+
+Verifying: DB vs ECS Enrichment for Keys (country_iso_code, geo.country_iso_code)
+dbIPEnrichmentMap =&gt;(country_iso_code,US)
+fileJsonIPEnrichmentMap =&gt;(geo.country_iso_code,US)
+
+
+Verifying: DB vs ECS Enrichment for Keys (subdivision_2_name, geo.subdivision_2_name)
+dbIPEnrichmentMap =&gt;(subdivision_2_name,California)
+fileJsonIPEnrichmentMap =&gt;(geo.subdivision_2_name,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (subdivision_1_iso_code, geo.subdivision_1_iso_code)
+dbIPEnrichmentMap =&gt;(subdivision_1_iso_code,CA)
+fileJsonIPEnrichmentMap =&gt;(geo.subdivision_1_iso_code,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (metro_code, geo.metro_code)
+dbIPEnrichmentMap =&gt;(metro_code,807)
+fileJsonIPEnrichmentMap =&gt;(geo.metro_code,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (is_satellite_provider, geo.is_satellite_provider)
+dbIPEnrichmentMap =&gt;(is_satellite_provider,true)
+fileJsonIPEnrichmentMap =&gt;(geo.is_satellite_provider,true)
+
+
+Verifying: DB vs ECS Enrichment for Keys (subdivision_1_name, geo.subdivision_1_name)
+dbIPEnrichmentMap =&gt;(subdivision_1_name,California)
+fileJsonIPEnrichmentMap =&gt;(geo.subdivision_1_name,)
+
+
+Verifying: DB vs ECS Enrichment for Keys (accuracy_radius, geo.location.accuracy_radius)
+dbIPEnrichmentMap =&gt;(accuracy_radius,20.0)
+fileJsonIPEnrichmentMap =&gt;(geo.location.accuracy_radius,1000)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 03-Jul-2024, 10:09:15 am</p>
+</div>
+</div>
+</body>
+</html>
